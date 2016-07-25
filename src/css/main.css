@@ -1,1 +1,4 @@
 /* add custom styles */
+.remove {
+  display: inline-block;
+}
