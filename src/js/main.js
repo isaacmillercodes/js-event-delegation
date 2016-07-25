@@ -12,7 +12,7 @@ var seedData = [
 $(document).on('ready', function() {
   seedData.forEach(function(seed) {
     addToDoToDom(seed);
-  })
+  });
 });
 
 $('form').on('submit', function(e) {
@@ -20,18 +20,18 @@ $('form').on('submit', function(e) {
 
   var $newToDo = $('#todoInput');
 
-  addToDoToDom($newToDo.val())
+  addToDoToDom($newToDo.val());
 
   $newToDo.val('');
-})
+});
 
 // ** helper functions ** //
 
 function addToDoToDom(seed) {
-  $('#all-todos').append('<li>' + seed + '</li>')
+  $('#all-todos').append('<li>' + seed + '</li>');
 }
 
 $('ol').on('click', 'li', function() {
   console.log('hey buddy this works');
   $(this).remove();
-})
+});
